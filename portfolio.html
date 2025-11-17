@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabreen Elgmmal | Full Stack Developer</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0b0014; /* موف غامق */
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(180deg, #220033, #0b0014);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #c77dff; /* موف فاتح */
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    p { color: #d8b4ff; font-size: 1.1rem; }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #c77dff;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+    }
+
+    /* About */
+    .about p {
+      text-align: center;
+      line-height: 1.8;
+      font-size: 1.2rem;
+      max-width: 850px;
+      margin: auto;
+      color: #efd6ff;
+    }
+
+    /* Skills */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 25px;
+      text-align: center;
+    }
+
+    .skill {
+      background-color: #20002c;
+      padding: 20px;
+      border-radius: 12px;
+      transition: 0.3s;
+      border: 1px solid #3a004f;
+      font-size: 1.1rem;
+      color: #e9c4ff;
+    }
+
+    .skill:hover {
+      background-color: #c77dff;
+      color: #000;
+      transform: translateY(-6px);
+    }
+
+    /* Projects */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .projects-grid img {
+      width: 100%;
+      height: 260px;
+      object-fit: contain;
+      background-color: #1e0029;
+      border-radius: 12px;
+      transition: 0.3s;
+      padding: 8px;
+      border: 1px solid #3a004f;
+    }
+
+    .projects-grid img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 0 15px #c77dff;
+    }
+
+    /* Contact */
+    .contact {
+      background-color: #1a0026;
+      padding: 50px;
+      text-align: center;
+      border-radius: 12px;
+      width: 85%;
+      margin: 50px auto;
+      border: 1px solid #3a004f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #15001f;
+      color: #c9a3ff;
+      margin-top: 40px;
+      font-size: 0.95rem;
+      border-top: 1px solid #3a004f;
+    }
+  </style>
+</head>
+<body>
+
+  <header style="display:flex;align-items:center;justify-content:center;gap:40px;flex-wrap:wrap;text-align:left;">
+    <img src="images/sabreen.jpg" alt="Sabreen" style="width:220px;height:220px;border-radius:50%;object-fit:cover;border:4px solid #c77dff;">
+    <div>
+      <h1 style="text-align:left;">Sabreen Elgmmal</h1>
+      <p style="text-align:left;">Full Stack Developer | HTML, CSS, JavaScript, Vue.js, PHP, MySQL</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm Sabreen Elgmmal, a passionate Full Stack Developer from Egypt.
+      I specialize in building dynamic, responsive websites using PHP, MySQL, and Vue.js.
+      I create professional dashboards with full functionality — including adding, deleting, and editing data — all fully integrated with clean, responsive front-end interfaces.
+      I love transforming ideas into polished, user-friendly digital experiences.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">Vue.js</div>
+      <div class="skill">PHP</div>
+      <div class="skill">MySQL</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+      <a href="images/1.png"><img src="images/1.png" alt="Project 1"></a>
+      <a href="images/2.png"><img src="images/2.png" alt="Project 2"></a>
+      <a href="images/3.png"><img src="images/3.png" alt="Project 3"></a>
+      <a href="images/4.png"><img src="images/4.png" alt="Project 4"></a>
+      <a href="images/5.png"><img src="images/5.png" alt="Project 5"></a>
+      <a href="images/6.png"><img src="images/6.png" alt="Project 6"></a>
+      <a href="images/7.png"><img src="images/7.png" alt="Project 7"></a>
+      <a href="images/8.png"><img src="images/8.png" alt="Project 8"></a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+
+    <p style="font-size:1.3rem;color:#e9c4ff;">
+      📩 Email: 
+      <a href="mailto:sabreenelgmal@gmail.com" style="color:#c77dff;font-weight:bold;">
+        sabreenelgmal@gmail.com
+      </a>
+    </p>
+
+  </section>
+
+  <footer>
+    © 2025 Sabreen Elgmmal | All Rights Reserved
+  </footer>
+
+</body>
+</html>
